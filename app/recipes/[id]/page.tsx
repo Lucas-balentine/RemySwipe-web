@@ -49,7 +49,7 @@ export default async function RecipePage({ params }: Props) {
           <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          <span style={{ fontFamily: 'var(--font-nunito), sans-serif', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'hsl(18 85% 52%)', fontSize: '1rem' }}>REMY</span>
+          <span style={{ fontFamily: 'var(--font-nunito), sans-serif', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.05em', color: 'hsl(18 85% 52%)', fontSize: '1rem' }}>REMY</span>
         </a>
       </header>
 
