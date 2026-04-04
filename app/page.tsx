@@ -10,7 +10,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2.5">
             <Image src="/logo.png" alt="Remy" width={36} height={36} className="rounded-xl" style={{ boxShadow: '0 2px 8px -2px hsl(25 30% 15% / 0.15)' }} />
-            <span style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 800, fontSize: '1.25rem', color: 'hsl(18 85% 52%)' }}>Remy</span>
+            <span style={{ fontFamily: 'var(--font-nunito), sans-serif', fontWeight: 900, fontSize: '1.3rem', color: 'hsl(18 85% 52%)', textTransform: 'uppercase', letterSpacing: '0.12em' }}>REMY</span>
           </div>
           <a
             href="https://apps.apple.com/app/id6746800910"
