@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getRecipeById } from '@/lib/supabase';
 import type { Metadata } from 'next';
-import Image from 'next/image';
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -55,12 +54,11 @@ export default async function RecipePage({ params }: Props) {
       {/* Hero image */}
       {recipe.image && (
         <div className="relative w-full h-64 sm:h-80">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={recipe.image}
             alt={recipe.name}
-            fill
-            className="object-cover"
-            priority
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f0f0f] via-[#0f0f0f]/20 to-transparent" />
         </div>
