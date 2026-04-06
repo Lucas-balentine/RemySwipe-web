@@ -9,7 +9,8 @@ export default function Home() {
         className="sticky top-0 z-10 px-6 py-4">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <Image src="/logo.png" alt="Remy" width={36} height={36} className="rounded-xl" style={{ boxShadow: '0 2px 8px -2px hsl(25 30% 15% / 0.15)' }} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.svg" alt="Remy" width={36} height={36} style={{ borderRadius: '10px', boxShadow: '0 2px 8px -2px hsl(25 30% 15% / 0.15)' }} />
             <span style={{ fontFamily: 'var(--font-nunito), sans-serif', fontWeight: 900, fontSize: '1.3rem', color: 'hsl(18 85% 52%)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>REMY</span>
           </div>
           <a
