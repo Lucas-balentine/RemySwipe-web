@@ -26,7 +26,7 @@ export default function Home() {
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6"
             style={{ background: 'hsl(18 85% 95%)', color: 'hsl(18 85% 48%)', border: '1px solid hsl(18 85% 85%)' }}>
-            🍳 Now available on the App Store
+            Now available on the App Store
           </div>
 
           <h1 style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 900, fontSize: 'clamp(3rem, 8vw, 5rem)', lineHeight: 1.05, letterSpacing: '-0.02em', color: 'hsl(25 30% 12%)' }}
