@@ -11,7 +11,7 @@ export default function Home() {
           <div className="flex items-center gap-2.5">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logo.png" alt="Remy" width={36} height={36} style={{ borderRadius: '10px', boxShadow: '0 2px 8px -2px hsl(25 30% 15% / 0.15)' }} />
-            <span style={{ fontFamily: 'var(--font-nunito), sans-serif', fontWeight: 900, fontSize: '1.3rem', color: 'hsl(18 85% 52%)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>REMY</span>
+            <span style={{ fontFamily: 'var(--font-nunito), sans-serif', fontWeight: 900, fontSize: '1.3rem', color: 'hsl(25 30% 12%)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>REMY</span>
           </div>
           <a
             href="https://apps.apple.com/app/id6746800910"
@@ -55,14 +55,13 @@ export default function Home() {
 
         {/* Screenshot */}
         <div className="mt-16 relative">
-          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '8rem', background: 'linear-gradient(to top, hsl(28 40% 97%), transparent)', zIndex: 1, pointerEvents: 'none' }} />
           <Image
-            src="/app-screenshot.png"
-            alt="Remy app screenshot"
-            width={280}
-            height={560}
-            className="rounded-3xl relative"
-            style={{ boxShadow: '0 24px 48px -12px hsl(25 30% 15% / 0.2), 0 0 0 1px hsl(25 20% 88%)' }}
+            src="/ipad-appstore.png"
+            alt="Remy recipe card"
+            width={360}
+            height={440}
+            className="relative"
+            style={{ filter: 'drop-shadow(0 24px 48px hsl(25 30% 15% / 0.18))' }}
             priority
           />
         </div>
