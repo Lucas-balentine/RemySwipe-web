@@ -51,61 +51,6 @@ export default function Home() {
           <p className="mt-3 text-xs" style={{ color: 'hsl(25 15% 60%)' }}>Free · iOS</p>
         </div>
 
-        {/* App mockup card */}
-        <div className="mt-16 relative flex justify-center">
-          {/* Phone frame */}
-          <div style={{ width: '260px', background: 'hsl(25 30% 10%)', borderRadius: '2.5rem', padding: '10px', boxShadow: '0 32px 64px -16px hsl(25 30% 15% / 0.35), 0 0 0 1px hsl(25 30% 8%)' }}>
-            {/* Screen */}
-            <div style={{ background: 'hsl(25 30% 10%)', borderRadius: '2rem', overflow: 'hidden' }}>
-              {/* Status bar */}
-              <div style={{ padding: '10px 18px 4px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontSize: '0.6rem', fontWeight: 700, color: 'white' }}>9:41</span>
-                <div style={{ width: '60px', height: '18px', background: 'hsl(25 30% 8%)', borderRadius: '999px' }} />
-                <div style={{ display: 'flex', gap: '3px', alignItems: 'center' }}>
-                  <div style={{ width: '10px', height: '6px', borderRadius: '1px', border: '1.5px solid white', position: 'relative' }}>
-                    <div style={{ position: 'absolute', inset: '1px', background: 'white', borderRadius: '0.5px' }} />
-                  </div>
-                </div>
-              </div>
-              {/* App header */}
-              <div style={{ padding: '6px 16px 8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span style={{ fontFamily: 'var(--font-nunito), sans-serif', fontWeight: 900, fontSize: '0.9rem', color: 'white', letterSpacing: '0.05em' }}>REMY</span>
-                <div style={{ width: '26px', height: '26px', borderRadius: '50%', background: 'hsl(18 85% 58%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
-                </div>
-              </div>
-              {/* Recipe card */}
-              <div style={{ margin: '0 10px 10px', borderRadius: '1.25rem', overflow: 'hidden', background: 'white', boxShadow: '0 8px 24px hsl(25 30% 5% / 0.4)' }}>
-                {/* Food image area */}
-                <div style={{ height: '160px', background: 'linear-gradient(160deg, hsl(18 85% 55%), hsl(35 90% 55%), hsl(28 70% 48%))', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <span style={{ fontSize: '4rem' }}>🍝</span>
-                  {/* Badges */}
-                  <div style={{ position: 'absolute', top: '10px', left: '10px', background: 'hsl(140 50% 40%)', color: 'white', borderRadius: '999px', padding: '2px 8px', fontSize: '0.55rem', fontWeight: 700 }}>Easy</div>
-                  <div style={{ position: 'absolute', top: '10px', right: '10px', background: 'rgba(0,0,0,0.4)', color: 'white', borderRadius: '999px', padding: '2px 8px', fontSize: '0.55rem', fontWeight: 600 }}>25 min</div>
-                </div>
-                {/* Card content */}
-                <div style={{ padding: '12px 14px 14px' }}>
-                  <div style={{ fontFamily: 'var(--font-fraunces), Georgia, serif', fontWeight: 900, fontSize: '0.85rem', color: 'hsl(25 30% 12%)', marginBottom: '4px', lineHeight: 1.2 }}>Creamy Pasta Carbonara</div>
-                  <div style={{ fontSize: '0.6rem', color: 'hsl(25 15% 50%)', marginBottom: '12px' }}>Italian · 2 servings · 450 kcal</div>
-                  {/* Swipe buttons */}
-                  <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
-                    <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'hsl(0 65% 95%)', border: '2px solid hsl(0 65% 85%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem' }}>✕</div>
-                    <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'hsl(140 50% 94%)', border: '2px solid hsl(140 50% 80%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1rem' }}>♡</div>
-                  </div>
-                </div>
-              </div>
-              {/* Tab bar */}
-              <div style={{ padding: '8px 0 12px', display: 'flex', justifyContent: 'space-around', borderTop: '1px solid hsl(25 20% 18%)' }}>
-                {['Discover', 'Cookbook', 'Meal Plan'].map((tab, i) => (
-                  <div key={tab} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px' }}>
-                    <div style={{ width: '18px', height: '18px', borderRadius: '4px', background: i === 0 ? 'hsl(18 85% 58%)' : 'hsl(25 15% 40%)', opacity: i === 0 ? 1 : 0.6 }} />
-                    <span style={{ fontSize: '0.45rem', color: i === 0 ? 'hsl(18 85% 58%)' : 'hsl(25 15% 50%)', fontWeight: i === 0 ? 700 : 400 }}>{tab}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
       </main>
 
       {/* Features */}
